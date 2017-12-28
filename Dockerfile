@@ -16,7 +16,7 @@ RUN url="http://www.apache.org/dyn/closer.lua?filename=hbase/$HBASE_VERSION/hbas
 COPY hbase-site.xml /hbase/conf/
 
 RUN apt-get install --no-install-recommends -y curl
-COPY init.sh /
-RUN chmod +x /init.sh
+COPY run2.sh /
+RUN chmod +x /run2.sh
 
-ENTRYPOINT "/init.sh"
+ENTRYPOINT "/run2.sh"
