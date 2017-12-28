@@ -13,4 +13,4 @@ if [ ! -e /opt/opentsdb_tables_created.txt ]; then
 fi
 
 # now that the table are created, start opentsdb
-/run.sh --auto-metric
+/run.sh tsd --auto-metric
